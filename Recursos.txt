@@ -1,0 +1,45 @@
+-- Install
+node --version
+npm i -g @nestjs/cli
+nest --version
+nest --help
+-- Create and run project
+nest new your-name-project
+cd your-name-project
+npm run start
+#  check http://localhost:3000/
+
+# Crea un controlador
+nest g controller {carpeta}/{nombre} --flat //Parametro --flat para no crear una subcarpeta
+
+# Crear Servicios
+nest g s {carpeta}/{nombre} --flat
+
+# Crear un pipe
+nest g pipe {carpeta}/{nombre}
+
+# clases de validacion de datos
+npm i class-validator class-transformer @nestjs/mapped-types
+
+# creacion de modulos
+nest g mo {nombre}
+
+#Setear variables en consola con windows
+Para los que usan windows y powershell una manera de setear la variable antes del comando es así:
+
+$env:NODE_ENV = 'prod'; npm run start:dev
+
+
+# Tipos de providers:
+
+-useValue: Proveedor de Valores
+-useFactory: provider fabricado de forma asincrona y tambien recibiendo una inyeccion
+
+# Paquete para manejar variables de ambiente (posee por debajo dotenv)
+npm i --save @nestjs/config
+
+# Paquete para validacion de tipos de datos en archivos .env
+npm install --save joi
+
+
+
