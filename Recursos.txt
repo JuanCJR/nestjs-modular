@@ -41,5 +41,6 @@ npm i --save @nestjs/config
 # Paquete para validacion de tipos de datos en archivos .env
 npm install --save joi
 
+# Paquetes para integrar swagger al proyecto
 
-
+npm install --save @nestjs/swagger swagger-ui-express
